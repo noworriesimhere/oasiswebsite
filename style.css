@@ -1,9 +1,3 @@
-* {
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
-
 nav {
     position: absolute;
 }
@@ -29,20 +23,14 @@ p {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
 }
-.parallax-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-weight:700;
-    width: 100%;
-    height: 88vh;
-}
 
 #parallax {
     background-image: url(img/div1.jpg);
     background-size: cover;
     background-position: center;
+    font-weight:700;
+    width: 100%;
+    height: 95vh;
 }
 
 #parallax h1 {
@@ -79,38 +67,28 @@ h2 {
 }
 
 #div2 {
-    height: 70vh;
+    height: 85vh;
     background: rgba(208, 211, 211, .9);
-    display: flex;
-    flex-direction: row;
 }
 
 #firstBox{
-    height: 70vh;
-    width: 50vw;
+    height: 100%;
     background-color: rgba(44, 44, 44, 0.95);
     color: rgba(230, 230, 230, 0.849);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 4em;
     font-weight: 500;
 }
 
 #firstSection {
+    display: flex;
     padding: 0 50px;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    height: 70vh;
-    width: 50vw;
-    position: relative;
+    height: 100%;
     top: 15%;
-    bottom: 15%
+    bottom: 15%;
 }
 
-#firstSection p {
-    margin: 2em 0;
+#firstSection > div {
+    vertical-align: middle;
 }
 
 #div3 {
@@ -118,7 +96,7 @@ h2 {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 65vh;
 
 }
 
@@ -132,39 +110,26 @@ h2 {
     font-family: 'Roboto Mono', monospace;
 }
 #div4 {
-    height: 70vh;
+    height: 80vh;
     background: rgba(208, 211, 211, .9);
     display: flex;
     flex-direction: row-reverse;
 }
 
 #secondBox{
-    height: 70vh;
     width: 50vw;
     background-color: rgba(44, 44, 44, 0.95);
     color: rgba(230, 230, 230, 0.849);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-size: 4em;
     font-weight: 500;
 }
 
 #secondSection {
     padding: 0 50px;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    height: 70vh;
-    width: 50vw;
+    height: 100%;
     position: relative;
     top: 10%;
     bottom: 15%
-}
-
-#secondSection p {
-    margin: 2em 0;
 }
 
 #div5 {
