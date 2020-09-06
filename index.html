@@ -13,23 +13,33 @@
     <title>Oasis Biblical Tours</title>
 </head>
 <body>  
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div><img src="img/oasisFavicon.png" alt="" id="cornerFavicon"></div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-item dropdown">
+  <nav class="p-1 navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              New York
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                New York
+                Wash DC
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Action</a>
@@ -37,85 +47,83 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Washington DC
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  California
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Israel
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                California
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Israel
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="alert" class="container alert fixed-top alert-dark mt-5 mb-0 alert-dismissible fade show" role="alert">
+      <h4 class="alert-heading">Update</h4>
+      Virtual Tours coming soon! Check out <a href="#" class="alert-link">News</a> for more information.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
 
     <div id="parallax" class="container-fluid text-center d-flex flex-column align-items-center d-flex justify-content-center">
         <img id="camelPic" src="./img/Camels.png" alt="Camels walking">
         <h1>Oasis Biblical Tours</h1>
-        <h4 class="mt-">Please scroll down</h4>
+        <div class="fixed-bottom d-flex justify-content-center">
+          <h4 id="h4">Please scroll down</h4>
+        </div>
     </div>
-    <div id="div2" class="container-fluid text-center">
-      <div class="row h-100">
-        <div id="firstBox" class="d-none d-lg-flex col-lg-6 align-items-center justify-content-center">
+    <div id="div2" class="container-fluid text-center px-3">
+      <div class="row">
+        <div id="firstBox" class="d-flex col-lg-6 align-items-center justify-content-center">
           <p>Welcome</p>
         </div>
-        <div id="firstSection" class="col-lg-6 position-static d-flex flex-column justify-content-center">
+        <div id="firstSection" class="col-lg-6 d-sm-flex flex-column py-5">
           <p>For many years, Oasis has been the only tour program in the United States dedicated solely to Biblical and Theocratic History Tours. Our goal has been simply to make unique spiritually encouraging tours with Bible themes available to those who appreciate them. Our location in New York City lends itself to that. Our motto has always fittingly been, TOURS THAT ENCOURAGE! </p>
           <p>Our sincere and humble desire is that friends will find these tours as refreshing as an Oasis in the desert! (w02 3/15 pp. 24-25) We have never been commercial in nature or motivated by profit. In fact, as many tours as possible are done freely or at cost! We are not a travel agency and we do not do leisure travel or tours. All of us are dedicated brothers and sisters, most of whom are in the full-time service and work secularly apart from this. We do not post our names or privileges on the website because we do not seek special recognition or acclaim. We hope the tours speak for themselves. (Matthew 11:19)</p>
         </div>
       </div>
     </div>
-    <div id="div3" class="container-fluid text-center d-flex flex-column align-items-center d-flex justify-content-center">
+    <div id="secondPic" class="container-fluid text-center d-flex flex-column align-items-center d-flex justify-content-center">
         <p>For more Oasis history, please <a href="#">click here</a> to learn more</p>
     </div>
-    <div id="div4" class="container-fluid text-center">
+    <div id="div4" class="container-fluid text-center px-0">
       <div id="secondBox" class="my-0 d-none d-lg-flex flex-column col-lg-6 align-items-center justify-content-center">
-        <p>Tours</p>
-        <p>That</p>
-        <p>Encourage!</p>
+        <div>
+          <p class="text-center">Tours That Encourage!</p>
+        </div>
       </div>
-      <div id="secondSection" class="col-lg-6 position-static d-flex flex-column justify-content-center my-0 py-0">
+      <div id="secondSection" class="col-lg-6 position-static d-sm-flex flex-column justify-content-center my-0 py-5">
           <p>Please note that we are not interested in “stirring up competition” with anyone. (Galatians 5:26) Even if others try to copy the Oasis program, we only remain doing what we have always done. Despite busy lives and many responsibilities, like so many of you dear ones, we have voluntarily made room in our schedules to design and conduct these tours for your benefit and encouragement.</p>
           <p>You may be assured all tours are based on the Bible, publications of the faithful and discreet slave, and reputable secular sources. Modern experiences have been verified with long-time members of the Bethel family. For as long as it may be Jehovah’s will, we pray these tours will continue to be a blessing to others and glorify his name. May all praise and honor go to him for the way in which archaeology, history, and fulfilled prophecy vindicates the Scriptures! (Isaiah 46:9, 10; Luke 19:40)</p>
           <p>It will be a real pleasure to be with you one day if you choose to join us on TOURS THAT ENCOURAGE!</p>
       </div>
     </div>
-    <div id="div5"  class="container-fluid text-center d-flex flex-column align-items-center d-flex justify-content-center">
+    <div id="thirdPic"  class="container-fluid text-center d-flex flex-column align-items-center d-flex justify-content-center">
       <p><a href="#">Book</a> a tour today!</p>
     </div>
     <div id="footer">

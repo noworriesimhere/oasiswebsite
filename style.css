@@ -1,6 +1,42 @@
-nav {
-    position: absolute;
+* {
+    font-family: 'Roboto Mono', monospace;
 }
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 400px) {  
+  h1 {font-size:2.5rem;} 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  h1 {font-size:3.5rem;} 
+  nav {font-size:.8rem;}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  h1 {font-size:4rem;}
+  nav {font-size:1rem;}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  h1 {font-size:5rem;} 
+  nav {font-size:1.3rem;}
+}
+ 
+#alert {
+    position: fixed;
+    top: 7%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#camelPic {
+    max-width: 100%;
+}
+
 
 .navbar-nav > li > .dropdown-menu { 
     background-color: rgba(44, 44, 44, 0.95); 
@@ -29,12 +65,10 @@ p {
     background-size: cover;
     background-position: center;
     font-weight:700;
-    width: 100%;
-    height: 95vh;
+    height: 100vh;
 }
 
 #parallax h1 {
-    font-size: 4em;
     color: rgba(230, 230, 230, 0.849);
     background: rgba(44, 44, 44, 0.95);
     padding: 8px 24px;
@@ -45,16 +79,27 @@ p {
     text-align: center;
 }
 
-#parallax h4 {
+#h4 {
     font-size: 1em;
     color: rgba(230, 230, 230, 0.849);
-    background: rgba(44, 44, 44, 0.95);
+    margin-bottom: 1.5rem;
+    background: rgba(44, 44, 44, 0.80);
     padding: 8px 24px;
     border-radius: 6px;
-    font-weight: 400;
-    font-family: 'Roboto Mono', monospace;
-    margin-top: .5em;
+    -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+    -moz-animation: glow 1.5s ease-in-out infinite alternate;
+    animation: glow 1.5s ease-in-out infinite alternate;
 }
+
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 30px #6d6d6d, 
+    }
+  }
 
 h2 {
     font-size: 2em;
@@ -67,15 +112,18 @@ h2 {
 }
 
 #div2 {
-    height: 85vh;
-    background: rgba(208, 211, 211, .9);
+    background: rgba(208, 211, 211, 1);
+    height: 100%;
+}
+
+#div2 > div {
+    height: 100%;
 }
 
 #firstBox{
-    height: 100%;
     background-color: rgba(44, 44, 44, 0.95);
     color: rgba(230, 230, 230, 0.849);
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 500;
 }
 
@@ -83,24 +131,21 @@ h2 {
     display: flex;
     padding: 0 50px;
     height: 100%;
-    top: 15%;
-    bottom: 15%;
 }
 
 #firstSection > div {
     vertical-align: middle;
 }
 
-#div3 {
+#secondPic {
     background-image: url(img/div3.jpg);
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 65vh;
-
 }
 
-#div3 > p {
+#secondPic > p {
     font-size: 1em;
     color: rgba(230, 230, 230, 0.849);
     background: rgba(44, 44, 44, 0.95);
@@ -110,18 +155,22 @@ h2 {
     font-family: 'Roboto Mono', monospace;
 }
 #div4 {
-    height: 80vh;
-    background: rgba(208, 211, 211, .9);
+    background: rgba(208, 211, 211, 1);
     display: flex;
     flex-direction: row-reverse;
+    height: 100%;
 }
 
 #secondBox{
     width: 50vw;
     background-color: rgba(44, 44, 44, 0.95);
     color: rgba(230, 230, 230, 0.849);
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 500;
+}
+
+#secondBox > div {
+    width: 50%;
 }
 
 #secondSection {
@@ -132,15 +181,16 @@ h2 {
     bottom: 15%
 }
 
-#div5 {
+#thirdPic {
     background-image: url(img/div7.jpg);
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 85vh;
+    background-attachment: fixed;
+    height: 65vh;
 }
 
-#div5 > p {
+
+#thirdPic > p {
     font-size: 1em;
     color: rgba(230, 230, 230, 0.849);
     background: rgba(44, 44, 44, 0.95);
