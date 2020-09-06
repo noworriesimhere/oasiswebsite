@@ -1,9 +1,9 @@
-const parallax = document.getElementById("parallax");
+const parallax = document.getElementById("parallaxPic");
 const checkpoint = 200;
 
 window.addEventListener("scroll", () => {
     let offset = window.scrollY;
-    parallax.style.backgroundPositionY = `${offset * 0.6}px`;
+    parallax.style.backgroundPositionY = `${offset * 0.4}px`;
     // the .6 determines the speed. If bigger than one, it'll scroll the other way.
     
 
