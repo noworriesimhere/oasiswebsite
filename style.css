@@ -2,9 +2,17 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 400px) {  
   h1 {font-size:2.5rem;} 
+  .fullvh {
+        height: auto;
+        top: 2.5rem;
+    }
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -17,6 +25,7 @@
 @media (min-width: 992px) { 
   h1 {font-size:4rem;}
   nav {font-size:1rem;}
+  .fullvh {height: 100vh;}
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
@@ -25,8 +34,18 @@
   nav {font-size:1.3rem;}
 }
  
+p > a {
+    color: rgb(0, 128, 17);
+    /* text-shadow: 1px 1px 2px rgb(0, 0, 0); */
+}
+
+p > a:hover {
+    color: rgb(0, 128, 17);
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
 h2 {
-    font-size: 3em;
+    font-size: 4em;
 }
 
 #alert {
@@ -36,71 +55,89 @@ h2 {
     right: 0;
     margin: auto;
     animation-name: appear;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 @-webkit-keyframes appear {
     0% {
         top: -10%;
+        opacity: 0;
+    }
+
+    50%  {
+        opacity: .8;
     }
     100% {
         top: 8%;
+        opacity: 1;
     }
-}
-
-#camelPic {
-    max-width: 100%;
 }
 
 
 .navbar-nav > li > .dropdown-menu { 
-    background-color: rgba(44, 44, 44, 0.95); 
+    background-color: rgba(44, 44, 44, 0.9); 
 }
 
 .navbar-nav > li > .dropdown-menu > a { 
-    color: white;
+    color: rgb(230, 230, 230);
 }
 
 .navbar-nav > li > .dropdown-menu > a:hover { 
     background-color: rgba(44, 44, 44, 0.5); 
 }
 
-#cornerFavicon {
-    max-width:70%;
-    height:auto;
+.textBox {
+    padding: 8px 24px;
+    border-radius: 6px;
 }
 
-p {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
+.darkTheme {
+    color: rgb(230, 230, 230);
+    background: rgba(44, 44, 44, 0.92);
+}
+
+.lightTheme {
+    background-color: rgba(184, 184, 184, 0.9);
+}
+
+.lighterTheme {
+    background-color: rgba(238, 238, 238, 0.9);
 }
 
 #parallaxPic {
-    background-image: url(img/div1.jpg);
+    transition-property: background-image;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    transition-delay: 5s;
+}
+
+#secondParallax {
+    transition-property: background-image;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    transition-delay: 5s;
+}
+
+.firstParallax {
     background-size: cover;
     background-position: center;
-    font-weight:700;
     height: 100vh;
+    z-index: -1;
 }
 
-#parallaxPic h1 {
-    color: rgba(230, 230, 230, 0.849);
-    background: rgba(44, 44, 44, 0.95);
-    padding: 8px 24px;
-    border-radius: 6px;
-    font-weight: 500;
-    font-family: 'Roboto Mono', monospace;
-    margin-top: .5em;
-    text-align: center;
+#secondParallax {
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -2;
+    -webkit-transform: translateZ(0);
 }
 
-#h4 {
-    font-size: 1em;
-    color: rgba(230, 230, 230, 0.849);
-    margin-bottom: 1.5rem;
-    background: rgba(44, 44, 44, 0.80);
-    padding: 8px 24px;
-    border-radius: 6px;
+h5 {
     -webkit-animation: glow 1.5s ease-in-out infinite alternate;
     -moz-animation: glow 1.5s ease-in-out infinite alternate;
     animation: glow 1.5s ease-in-out infinite alternate;
@@ -116,129 +153,31 @@ p {
     }
   }
 
-#div2 {
-    background: rgba(208, 211, 211, 1);
-    height: 100%;
-}
-
-#div2 > div {
-    height: 100%;
-}
-
-#firstBox{
-    background-color: rgba(44, 44, 44, 0.95);
-    color: rgba(230, 230, 230, 0.849);
-}
-
-#firstSection {
-    display: flex;
-    padding: 0 50px;
-    height: 100%;
-}
-
-#firstSection > div {
-    vertical-align: middle;
-}
-
-#secondPic {
-    background-image: url(img/div3.jpg);
-    background-size: cover;
-    background-position: center;
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: -1;
-    -webkit-transform: translateZ(0);
-}
-
-#secondPic > p {
-    font-size: 1em;
-    color: rgba(230, 230, 230, 0.849);
-    background: rgba(44, 44, 44, 0.95);
-    padding: 8px 24px;
-    border-radius: 6px;
-    font-weight: 400;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#div4 {
-    background: rgb(208, 211, 211);
-    height: 100%;
-}
-
-#secondBox{
-    background-color: rgba(44, 44, 44, 0.95);
-    color: rgba(230, 230, 230, 0.849);
-}
-
-#secondBox > div {
-    width: 50%;
-}
-
-#secondSection {
-    padding: 0 50px;
-    height: 100%;
-    position: relative;
-    top: 10%;
-    bottom: 15%
-}
-
-
 #footer{
-    height: 3vh;
+    height: 1.5em;
 }
 
-#footer > p {
-    margin-bottom: -1.5em;
-    background-color: white;
-
+#footer > p {;
+    background-color: rgb(208, 211, 211);
+    margin-bottom: -3em;
 }
 
 .spacers {
     height: 50vh;
 }
 
-.spacers > p {
-    font-size: 1em;
-    color: rgba(230, 230, 230, 0.849);
-    background: rgba(44, 44, 44, 0.95);
-    padding: 8px 24px;
-    border-radius: 6px;
-    font-weight: 400;
-    font-family: 'Roboto Mono', monospace;
+/* styles specific to newyork page */
+
+h3 {
+    margin: 2em;
+    padding-top: 11rem;
+    margin-top: -11rem;
 }
 
-.tn-box {
-	width: 360px;
-	position: relative;
-	margin: 0 auto 20px auto;
-	padding: 25px 15px;
-	text-align: left;
-	border-radius: 5px;
-    box-shadow: 
-		0 1px 1px rgba(0,0,0,0.1), 
-		inset 0 1px 0 rgba(255,255,255,0.6);  
-	opacity: 0;
-	cursor: default;
-	display: none;
+h3 ~ p {
+    margin: 1em 1.5em;
 }
 
-.tn-box-color-1{
-	background: #ffe691;
-	border: 1px solid #f6db7b;
-}
-
-.tn-progress {
-	width: 0;
-	height: 4px;
-	background: rgba(255,255,255,0.3);
-	position: absolute;
-	bottom: 5px;
-	left: 2%;
-	border-radius: 3px;
-	box-shadow: 
-		inset 0 1px 1px rgba(0,0,0,0.05), 
-		0 -1px 0 rgba(255,255,255,0.6);
+.big-bottom-padding {
+    padding-bottom: 7rem!important;
 }
