@@ -1,3 +1,3 @@
-# oasiswebsite
+# parallaxtemplate
 
-A redesign of to be proposed
+Originally a website redesign to be proposed for a company.
