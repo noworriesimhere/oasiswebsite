@@ -104,25 +104,12 @@ h2 {
     background-color: rgba(238, 238, 238, 0.9);
 }
 
-#parallaxPic {
-    transition-property: background-image;
-    transition-duration: 3s;
-    transition-timing-function: ease;
-    transition-delay: 4s;
-}
-
-#secondParallax {
-    transition-property: background-image;
-    transition-duration: 3s;
-    transition-timing-function: ease;
-    transition-delay: 5s;
-}
-
 .firstParallax {
     background-size: cover;
     background-position: center;
     height: 100vh;
     z-index: -1;
+    background-position-y: 0px;
 }
 
 #secondParallax {
@@ -215,8 +202,8 @@ h3 ~ p {
   }
 
   .slide-in-bottom {
-	-webkit-animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-in-bottom 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes slide-in-bottom {
