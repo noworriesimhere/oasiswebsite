@@ -93,15 +93,15 @@ h2 {
 
 .darkTheme {
     color: rgb(230, 230, 230);
-    background: rgba(44, 44, 44, 0.92);
+    background: rgba(44, 44, 44, 0.8);
 }
 
 .lightTheme {
-    background-color: rgba(184, 184, 184, 0.9);
+    background-color: rgba(184, 184, 184, 0.77);
 }
 
 .lighterTheme {
-    background-color: rgba(238, 238, 238, 0.9);
+    background-color: rgba(238, 238, 238, 0.77);
 }
 
 .firstParallax {
