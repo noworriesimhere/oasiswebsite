@@ -5,10 +5,8 @@ const sections = document.querySelectorAll(".section"),
       images = document.querySelectorAll(".background"),
       navbar = document.querySelector(".navbar"),
       options = {
-                rootMargin: "0px 0px -100%"
+                rootMargin: "0px 0px -95%"
                 };
-
-let counter = -1;
 
 function setScroll() {
   let offset = window.scrollY;
@@ -57,17 +55,11 @@ observer.observe(parallax);
 
 const observePic = new IntersectionObserver(function(entry, observePic) {
   if (!entry.isIntersecting) {
-      counter++;
+      images.forEach(image => {
+        image.classList.remove("visible");
+      });
+      images[Math.floor(Math.random() * 8)].classList.add("visible");
   };
-  images.forEach(image => {
-    image.classList.add("invisible");
-  });
-  if (counter < images.length) {
-    images[counter].classList.replace("invisible", "visible");
-  } else {
-    counter = 0;
-    images[counter].classList.replace("invisible", "visible");
-  }
 }, options)
 
 sections.forEach(section => {
