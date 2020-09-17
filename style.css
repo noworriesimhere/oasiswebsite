@@ -105,15 +105,13 @@ h2 {
 }
 
 .firstParallax {
-    background-size: cover;
-    background-position: center;
     height: 100vh;
-    z-index: -1;
-    background-position-y: 0px;
 }
 
-#secondParallax {
-    background-size: cover;
+.background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     background-position: center;
     position: fixed;
     top: 0px;
@@ -122,6 +120,16 @@ h2 {
     right: 0px;
     z-index: -2;
     -webkit-transform: translateZ(0);
+    transition: 1s ease-in-out;
+}
+
+.invisible {
+  opacity: 0;
+
+}
+
+.visible {
+  opacity: 1!important;
 }
 
 h5 {

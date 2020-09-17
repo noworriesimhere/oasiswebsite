@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b36654fc1.js" crossorigin="anonymous"></script>
     <title>Your Website</title>
 </head>
 <body>  
@@ -83,7 +84,7 @@
       </div>
     </nav>
 
-    <div style="background-image: url('./img/new_york/newyorktop1.jpg')" id="parallaxPic" class="firstParallax d-flex flex-column align-items-center justify-content-center">
+    <section id="parallaxPic" class="firstParallax d-flex flex-column align-items-center justify-content-center">
       <div class="d-flex textBox darkTheme">
         <h1 class="px-3 scroll slide-in-top" data-rateX="0" data-rateY=".25">Parallax</h1><h1 class="px-3 scroll">Web</h1><h1 class="px-3 scroll slide-in-bottom"data-rateX="0" data-rateY="-.25">Designs</h1>
       </div>
@@ -98,9 +99,9 @@
         </div>
       </div>
       <div class="fixed-bottom d-flex justify-content-center">
-        <h5 class="textBox darkTheme mb-5">scroll down</h5>
+        <h5 class="textBox darkTheme mb-5"><i class="fas fa-chevron-down fa-3x"></i></h5>
       </div>
-    </div>
+    </section>
     <section class="h-100 text-center d-flex container-fluid">
       <div class="row">
         <div class="col-lg-6 px-0 d-flex flex-column darkTheme align-items-center justify-content-center fullvh sticky-top">
@@ -108,8 +109,8 @@
           <p><a href="#top">Jump to top</a></p>
         </div>
         <div class="col-lg-6 px-0">
-          <div class="d-flex flex-column p-5 m-0 lightTheme big-bottom-padding">
-            <h3 id="sec1">Section 1</h3>
+          <div class="d-flex flex-column p-5 m-0 lightTheme big-bottom-padding section">
+            <h3 id="sec1" >Section 1</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur itaque corrupti voluptas cum vero facere, consequatur placeat error quod fugiat laudantium, quo, aliquid iusto.
             </p>
@@ -118,8 +119,8 @@
             </p>
             <p><a href="#">Learn More</a></p>
           </div>
-          <div class="d-flex flex-column p-5 m-0 lighterTheme big-bottom-padding">
-            <h3 id="sec2">Section 2</h3>
+          <div class="d-flex flex-column p-5 m-0 lighterTheme big-bottom-padding section">
+            <h3 id="sec2" >Section 2</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vel enim ipsa incidunt iste soluta consequatur maiores, officia quis repellendus ipsum quae asperiores necessitatibus ullam. Ipsam, laboriosam sapiente? Esse, ducimus.
             </p>
@@ -131,8 +132,8 @@
             </p>
             <p><a href="#">Learn More</a></p>
           </div>
-          <div class="d-flex flex-column p-5 m-0 lightTheme big-bottom-padding">
-            <h3 id="sec3">Section 3</h3>
+          <div class="d-flex flex-column p-5 m-0 lightTheme big-bottom-padding section">
+            <h3 id="sec3" >Section 3</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vel enim ipsa incidunt iste soluta consequatur maiores, officia quis repellendus ipsum quae asperiores necessitatibus ullam. Ipsam, laboriosam sapiente? Esse, ducimus.
             </p>
@@ -147,7 +148,14 @@
         </div>
       </div>
     </section>
-    <div style="background-image: url(./img/new_york/newyorkbottom1.jpg)" id="secondParallax"></div>
+    <div>
+      <img src="/img/new_york/newyorktop1.jpg" class="background visible">
+      <img src="/img/new_york/newyorktop2.jpg" class="background invisible">
+      <img src="/img/new_york/newyorktop3.jpg" class="background invisible">
+      <img src="/img/new_york/newyorktop4.jpg" class="background invisible">
+      <img src="/img/new_york/newyorktop5.jpg" class="background invisible">
+      <img src="/img/new_york/newyorktop6.jpg" class="background invisible">
+    </div>
     <section class="h-100 text-center d-flex container-fluid">
       <div class="row flex-row-reverse">
         <div class="col-lg-6 px-0 d-flex flex-column darkTheme align-items-center justify-content-center fullvh sticky-top">
@@ -155,8 +163,8 @@
           <p><a href="#top">Jump to top</a></p>
         </div>
         <div class="col-lg-6 px-0">
-          <div class="d-flex flex-column p-5 m-0 lightTheme big-bottom-padding">
-            <h3 id="sec4">Section 4</h3>
+          <div class="d-flex flex-column p-5 m-0 lightTheme big-bottom-padding section">
+            <h3 id="sec4" >Section 4</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vel enim ipsa incidunt iste soluta consequatur maiores, officia quis repellendus ipsum quae asperiores necessitatibus ullam. Ipsam, laboriosam sapiente? Esse, ducimus.
             </p>
@@ -168,8 +176,8 @@
             </p>
             <p><a href="#">Learn More</a></p>
           </div>
-          <div class="d-flex flex-column p-5 m-0 lighterTheme big-bottom-padding">
-            <h3 id="sec5">Section 5</h3>
+          <div class="d-flex flex-column p-5 m-0 lighterTheme big-bottom-padding section">
+            <h3 id="sec5" >Section 5</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vel enim ipsa incidunt iste soluta consequatur maiores, officia quis repellendus ipsum quae asperiores necessitatibus ullam. Ipsam, laboriosam sapiente? Esse, ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dicta explicabo natus dolore expedita reprehenderit! Pariatur, aut nam. Voluptate optio dolorum illum fugit tempore, explicabo sit maxime eaque adipisci odit.
             </p>
@@ -178,7 +186,7 @@
             </p>
             <p><a href="#">Learn More</a></p>
           </div>
-          <div class="d-flex flex-column p-5 m-0 lightTheme big-bottom-padding">
+          <div class="d-flex flex-column p-5 m-0 lightTheme big-bottom-padding section">
             <h3 id="sec6">Section 6</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores impedit nisi soluta unde, perferendis hic libero aperiam? Quos exercitationem laudantium vero odit quas, quisquam labore minima a totam! Sequi, aspernatur.
@@ -189,7 +197,7 @@
       </div>
     </section>
     <div class="spacers d-flex flex-column align-items-center justify-content-center">
-      <p class="darkTheme textBox"><a href="#">Book</a> a tour today!</p>
+      <p class="darkTheme textBox"><a href="#"><i class="fas fa-chevron-up fa-4x"></i></a> </p>
     </div>
     <div id="footer">
         <p class="text-center pb-1">| Oasis Biblical Tours ℠ |</p>

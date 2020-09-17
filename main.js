@@ -1,13 +1,17 @@
-const parallax = document.getElementById("parallaxPic"),
-      parallax2 = document.getElementById("secondParallax"),
+const sections = document.querySelectorAll(".section"),
+      parallax = document.getElementById("parallaxPic"),
       target = document.getElementsByClassName('scroll'),
       checkpoint = 200,
-      options = {};
+      images = document.querySelectorAll(".background"),
+      navbar = document.querySelector(".navbar"),
+      options = {
+                rootMargin: "0px 0px -100%"
+                };
+
+let counter = -1;
 
 function setScroll() {
   let offset = window.scrollY;
-  parallax.style.backgroundPositionY = `${offset * 0.7}px`;
-  // the .6 determines the speed. If bigger than one, it'll scroll the other way.
 
   //Code below is for "scroll down" prompt
   if (offset <= checkpoint) {
@@ -36,7 +40,7 @@ function removeCSSfade(){
 setTimeout(removeCSSfade, 2100);
 
 
-
+//observer for parallax in the beginning
 const observer = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -44,9 +48,29 @@ const observer = new IntersectionObserver(function(entries, observer) {
       } else {
         window.removeEventListener("scroll", setScroll);
       }
-      console.log(entry);
     })
-}, options);
+  });
 
 
 observer.observe(parallax);
+//observer for background pictures
+
+const observePic = new IntersectionObserver(function(entry, observePic) {
+  if (!entry.isIntersecting) {
+      counter++;
+  };
+  images.forEach(image => {
+    image.classList.add("invisible");
+  });
+  if (counter < images.length) {
+    images[counter].classList.replace("invisible", "visible");
+  } else {
+    counter = 0;
+    images[counter].classList.replace("invisible", "visible");
+  }
+}, options)
+
+sections.forEach(section => {
+  observePic.observe(section);
+})
+
