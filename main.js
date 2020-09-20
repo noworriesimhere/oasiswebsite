@@ -25,8 +25,9 @@ function setScroll() {
     var posY = window.pageYOffset * target[i].dataset.ratey;
     target[i].style.transform = 'translate3d('+posX+'px, '+posY+'px, 0px)';
   }
+};
 
-}
+window.addEventListener("scroll", setScroll);
 
 function removeCSSfade(){
   for(let i = 0; i < target.length; i++) {
@@ -36,22 +37,6 @@ function removeCSSfade(){
 };
 
 setTimeout(removeCSSfade, 2100);
-
-
-//observer for parallax in the beginning
-const observer = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        window.addEventListener("scroll", setScroll);
-      } else {
-        window.removeEventListener("scroll", setScroll);
-      }
-    })
-  });
-
-
-observer.observe(parallax);
-//observer for background pictures
 
 const observePic = new IntersectionObserver(function(entry, observePic) {
   if (!entry.isIntersecting) {
