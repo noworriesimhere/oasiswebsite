@@ -120,12 +120,7 @@ h2 {
     right: 0px;
     z-index: -2;
     -webkit-transform: translateZ(0);
-    transition: 2.5s ease-in-out;
-    opacity: 0;
-}
-
-.visible {
-  opacity: 1!important;
+    transition: 1s ease-in-out;
 }
 
 h5 {
