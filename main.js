@@ -1,12 +1,12 @@
-const sections = document.querySelectorAll(".section"),
-      parallax = document.getElementById("parallaxPic"),
-      target = document.getElementsByClassName('scroll'),
-      checkpoint = 200,
-      images = document.querySelectorAll(".background"),
-      navbar = document.querySelector(".navbar"),
-      options = {
-                rootMargin: "0px 0px -95%"
-                };
+const sections    = document.querySelectorAll(".section"),
+      parallax    = document.getElementById("parallaxPic"),
+      target      = document.getElementsByClassName('scroll'),
+      checkpoint  = 200,
+      images      = document.querySelectorAll(".background"),
+      navbar      = document.querySelector(".navbar"),
+      options     = {
+                    rootMargin: "0px 0px -95%"
+                    };
 
 function setScroll() {
   let offset = window.scrollY;
@@ -38,7 +38,7 @@ function removeCSSfade(){
 
 setTimeout(removeCSSfade, 2100);
 
-const observePic = new IntersectionObserver(function(entry, observePic) {
+const observePic = new IntersectionObserver((entry, observePic) => {
   if (!entry.isIntersecting) {
       images.forEach(image => {
         image.classList.remove("visible");
