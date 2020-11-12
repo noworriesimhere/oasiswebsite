@@ -34,6 +34,10 @@ html {
   nav {font-size:1.3rem;}
 }
  
+body {
+  background-color: rgb(116, 116, 116);
+}
+
 p > a {
     color: rgb(0, 128, 17);
     /* text-shadow: 1px 1px 2px rgb(0, 0, 0); */
@@ -120,7 +124,7 @@ h2 {
     right: 0px;
     z-index: -2;
     -webkit-transform: translateZ(0);
-    transition: 1s ease-in-out;
+    transition: .25s ease-in-out;
 }
 
 h5 {
@@ -143,13 +147,17 @@ h5 {
     height: 1.5em;
 }
 
-#footer > p {;
+#footer > p {
     background-color: rgb(208, 211, 211);
     margin-bottom: -3em;
 }
 
 .spacers {
     height: 75vh;
+}
+
+.fixed-bottom {
+  z-index: -1;
 }
 
 /* styles specific to newyork page */

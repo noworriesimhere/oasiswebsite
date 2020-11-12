@@ -54,7 +54,7 @@ function randomImage() {
 };
 
 function fadeOut() {
-  image.style.opacity = 0;
+  image.style.opacity = .05;
 }
 
 function fadeIn() {
@@ -63,8 +63,8 @@ function fadeIn() {
 
 function workYoMagic() {
   fadeOut();
-  setTimeout(randomImage, 900);
-  setTimeout(fadeIn, 1200);
+  setTimeout(randomImage, 200);
+  setTimeout(fadeIn, 400);
 }
 
 const observePic = new IntersectionObserver((entry, observePic) => {
